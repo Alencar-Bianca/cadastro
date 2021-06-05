@@ -16,27 +16,39 @@
     <link rel="stylesheet" href="style/components/main-display.css">
     <link rel="stylesheet" href="style/components/main-header.css">
     <link rel="stylesheet" href="style/components/main-title.css">
+    <link rel="stylesheet" href="style/media.css">
     
 </head>
 <body>
     <header class="main-header">
-            <div class="main-display">
-                        <div class="logo -left">
-                            <h1 class="main-title">Alencar</h1>
-                        </div>
-
-                        <div class="menu-desktop -right">
-                            <ul class="ul">
-                                <li class="li"><a class="a" href="">Home</a> </li>
-                                <li class="li"><a class="a" href="">Serviços</a> </li>
-                                <li class="li"><a class="a" href="">Sobre</a> </li>
-                                <li class="li"><a class="a" href="">Contato</a></li>
-                            </ul>
-                        </div>
+        <div class="main-display">
+            <div class="logo -left">
+                <h1 class="main-title">Alencar</h1>
             </div>
-            <div class="clear"></div>
+            <nav class="menu-desktop -right">
+                <ul class="ul">
+                    <li class="li"><a class="a" href="">Home</a> </li>
+                    <li class="li"><a class="a" href="">Serviços</a> </li>
+                    <li class="li"><a class="a" href="">Sobre</a> </li>
+                    <li class="li"><a class="a" href="">Contato</a></li>
+                </ul>                 
+            </nav>
+
+            <nav class="menu-mobile -right">
+                <h2 class="logo-menu"><i  class="fas fa-align-justify"></i></h2>
+                <ul class="ul">
+                    <li class="li"><a class="a" href="">Home</a> </li>
+                    <li class="li"><a class="a" href="">Serviços</a> </li>
+                    <li class="li"><a class="a" href="">Sobre</a> </li>
+                    <li class="li"><a class="a" href="">Contato</a></li>
+                </ul>                 
+            </nav>
+        </div>
+        <div class="clear"></div>
     </header>
    
     <script src="https://kit.fontawesome.com/c53d477a6e.js" crossorigin="anonymous"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 </html>

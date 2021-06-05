@@ -1,0 +1,8 @@
+@media screen and (max-width: 760px){
+    .main-header .menu-desktop {
+        display: none;
+    }
+    .main-header  .menu-mobile .logo-menu{
+        display: block;
+    }
+}
