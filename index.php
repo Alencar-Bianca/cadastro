@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="style/components/main-display.css">
     <link rel="stylesheet" href="style/components/main-header.css">
     <link rel="stylesheet" href="style/components/main-title.css">
+    <link rel="stylesheet" href="style/components/main-banners.css">
+    <link rel="stylesheet" href="style/components/main-input.css">
     <link rel="stylesheet" href="style/media.css">
     
 </head>
@@ -47,8 +49,25 @@
         <div class="clear"></div>
     </header>
    
+    <section class="main-banners">
+    
+        <div style="background-image: url('image/banner.jpg');" class="img-banner"></div>
+        <div style="background-image: url('image/banner2.jpg');"  class="img-banner"></div>
+        <div style="background-image: url('image/banner3.jpg');"  class="img-banner"></div>
+        <div style="background-image: url('image/banner4.jpg');"  class="img-banner"></div>
+        <div  class="layer">
+            <div class="main-display">
+                <form>
+                    <h1 class="main-title">Entre em Contato</h1>
+                    <input class="main-input" type="email" name="email" placeholder="Email">
+                    <input class="bnt" type="submit" name="action" value="Enviar">
+                </form>
+            </div>
+        </div> 
+    </section>
     <script src="https://kit.fontawesome.com/c53d477a6e.js" crossorigin="anonymous"></script>
     <script src="js/jquery.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/slide.js"></script>
 </body>
 </html>

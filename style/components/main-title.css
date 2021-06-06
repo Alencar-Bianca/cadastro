@@ -3,5 +3,5 @@
     color: var(--color3);
     font-size: 3.2em;
     font-weight: bold;
-    padding: 5px 2%;
+    text-shadow: 2px 2px 3px #000;
 }

@@ -33,6 +33,7 @@
     left: 0;
     text-align: center;
     background-color: var(--color1);
+    z-index: 10;
 }
 .main-header .menu-mobile .ul .li {
     margin-top: 15px;
