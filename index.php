@@ -16,8 +16,11 @@
     <link rel="stylesheet" href="style/components/main-display.css">
     <link rel="stylesheet" href="style/components/main-header.css">
     <link rel="stylesheet" href="style/components/main-title.css">
+    <link rel="stylesheet" href="style/components/main-subtitle.css">
     <link rel="stylesheet" href="style/components/main-banners.css">
     <link rel="stylesheet" href="style/components/main-input.css">
+    <link rel="stylesheet" href="style/components/main-about.css">
+    <link rel="stylesheet" href="style/components/main-p.css">
     <link rel="stylesheet" href="style/media.css">
     
 </head>
@@ -30,8 +33,8 @@
             <nav class="menu-desktop -right">
                 <ul class="ul">
                     <li class="li"><a class="a" href="">Home</a> </li>
-                    <li class="li"><a class="a" href="">Serviços</a> </li>
                     <li class="li"><a class="a" href="">Sobre</a> </li>
+                    <li class="li"><a class="a" href="">Serviços</a> </li>
                     <li class="li"><a class="a" href="">Contato</a></li>
                 </ul>                 
             </nav>
@@ -40,8 +43,8 @@
                 <h2 class="logo-menu"><i  class="fas fa-align-justify"></i></h2>
                 <ul class="ul">
                     <li class="li"><a class="a" href="">Home</a> </li>
-                    <li class="li"><a class="a" href="">Serviços</a> </li>
                     <li class="li"><a class="a" href="">Sobre</a> </li>
+                    <li class="li"><a class="a" href="">Serviços</a> </li>
                     <li class="li"><a class="a" href="">Contato</a></li>
                 </ul>                 
             </nav>
@@ -64,6 +67,28 @@
                 </form>
             </div>
         </div> 
+    </section>
+
+    <section class="main-about">
+        <div class="main-display">
+            <h1 class="main-title">Sobre</h1>
+            <div class="w50 -left maxmargin">
+                <h2 class="main-subtitle">Bianca Alencar</h2>
+                <p class="main-p">Oie, eu só apenas uma estudante de full stack. Estou desenvolvendo vários projetos próprios, para estudar e aprimorar os meu conhecimentos.</p>
+                <h2 class="main-subtitle margintop">Estudo</h2>
+                    <ul class="ul">
+                        <li class="li">html</li>
+                        <li class="li">css</li>
+                        <li class="li">javascript/jquery</li>
+                        <li class="li">php</li>
+                    </ul>
+                
+            </div>
+
+            <div class="w50 -right margintop">
+            <img class="aboutimg" src="image/img.jpg" alt="Foto">
+            </div>
+        </div>
     </section>
     <script src="https://kit.fontawesome.com/c53d477a6e.js" crossorigin="anonymous"></script>
     <script src="js/jquery.js"></script>
