@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="style/components/main-input.css">
     <link rel="stylesheet" href="style/components/main-about.css">
     <link rel="stylesheet" href="style/components/main-p.css">
+    <link rel="stylesheet" href="style/components/main-skills.css">
     <link rel="stylesheet" href="style/media.css">
     
 </head>
@@ -74,19 +75,40 @@
             <h1 class="main-title">Sobre</h1>
             <div class="w50 -left maxmargin">
                 <h2 class="main-subtitle">Bianca Alencar</h2>
-                <p class="main-p">Oie, eu só apenas uma estudante de full stack. Estou desenvolvendo vários projetos próprios, para estudar e aprimorar os meu conhecimentos.</p>
-                <h2 class="main-subtitle margintop">Estudo</h2>
-                    <ul class="ul">
-                        <li class="li">html</li>
-                        <li class="li">css</li>
-                        <li class="li">javascript/jquery</li>
-                        <li class="li">php</li>
-                    </ul>
-                
+                <p class="main-p">Oie, eu sou apenas uma estudante de full stack. Estou desenvolvendo vários projetos próprios, para estudar e aprimorar os meu conhecimentos.</p>
             </div>
-
             <div class="w50 -right margintop">
             <img class="aboutimg" src="image/img.jpg" alt="Foto">
+            </div>
+        </div>
+        <div class="clear"></div>
+    </section>
+
+    <section class="main-skills">
+        <div class="main-display">
+            <h1 class="main-title">Habilidades</h1>
+
+            <div class="containerskills">
+                <div class="single-skills">
+                <h2 class="main-subtitle"><i class="fab fa-html5"></i></h2>
+                <h3 class="main-subtitle">html5</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique numquam odit.</p>
+                </div>
+                <div class="single-skills">
+                <h2 class="main-subtitle"><i class="fab fa-css3"></i></h2>
+                <h3 class="main-subtitle">css</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique numquam odit.</p>
+                </div>
+                <div class="single-skills">
+                <h2 class="main-subtitle"><i class="fab fa-js"></i></h2>
+                <h3 class="main-subtitle">javascript</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique numquam odit.</p>
+                </div>
+                <div class="single-skills">
+                <h2 class="main-subtitle"><i class="fab fa-php"></i></h2>
+                <h3 class="main-subtitle">php</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique numquam odit.</p>
+                </div>
             </div>
         </div>
     </section>
