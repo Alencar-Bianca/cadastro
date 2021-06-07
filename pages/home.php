@@ -27,7 +27,7 @@
             <div class="clear"></div>
         </section>
         
-        <section id="service" class="main-skills">
+        <section id="skill" class="main-skills">
             <div class="main-display">
                 <h1 class="main-title">Habilidades</h1>
                 <div class="containerskills">
@@ -54,3 +54,39 @@
                 </div>
             </div>
         </section>
+
+        <section id="depo" class="main-depo">
+            <div class="main-display">
+                <div class="depositions w50 -left">
+                    <h2 class="main-subtitle">Depoimentos</h2>
+                    <div class="singledepoimento">
+                    <h2 class="main-subtitle">Regina</h2>
+                        <p class="main-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+
+                    <div class="singledepoimento">
+                    <h2 class="main-subtitle">Alex</h2>
+                        <p class="main-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+
+                    <div class="singledepoimento">
+                    <h2 class="main-subtitle">Delphine</h2>
+                        <p class="main-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+
+                <div class="service w50 -right">
+                <h2 class="main-subtitle">Serviços</h2>
+                <ul class="ul">
+                    <li class="li">Web estáticos</li>
+                    <li class="li">Web dinâmicos</li>
+                    <li class="li">Loja online/e-commerce</li>
+                    <li class="li">Portal web app</li>
+                    <li class="li">Desenvolvimento game</li>
+                    <li class="li">Desenvolvimento app</li>
+                </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </section>
+

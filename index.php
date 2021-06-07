@@ -25,21 +25,30 @@
     <link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>style/components/main-about.css">
     <link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>style/components/main-p.css">
     <link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>style/components/main-skills.css">
+    <link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>style/components/main-error.css">
+    <link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>style/components/main-contact.css">
+    <link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>style/components/main-depo.css">
+    <link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>style/components/main-footer.css">
+
     <link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>style/media.css">
-    <link rel="stylesheet" href="style/components/main-error.css">
 </head>
 <body>
-<base base="<?php echo INCLUDE_PATH; ?>">
+
 <?php
     $url = isset($_GET['url'])?$_GET['url']:'home';
+
 
     switch($url){
         case 'about':
             echo '<target target="about"/>';
             break;
         
-        case 'service':
-            echo "<target target='about'/>";
+        case 'skill':
+            echo "<target target='skill'/>";
+        break;
+
+        case 'depo':
+            echo '<target target="depo"/>';
         break;
     }
 ?>
@@ -53,8 +62,9 @@
                 <ul class="ul">
                     <li class="li"><a class="a" href="<?php echo INCLUDE_PATH; ?>">Home</a> </li>
                     <li class="li"><a class="a" href="<?php echo INCLUDE_PATH; ?>about">Sobre</a> </li>
-                    <li class="li"><a class="a" href="<?php echo INCLUDE_PATH; ?>service">Serviços</a> </li>
-                    <li class="li"><a class="a" href="<?php echo INCLUDE_PATH; ?>contact">Contato</a></li>
+                    <li class="li"><a class="a" href="<?php echo INCLUDE_PATH; ?>skill">Skills</a> </li>
+                    <li class="li"><a class="a" href="<?php echo INCLUDE_PATH; ?>depo">Depoimentos</a> </li>
+                    <li class="li"><a c = "contato" class="a" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
                 </ul>                 
             </nav>
 
@@ -63,8 +73,9 @@
                 <ul class="ul">
                     <li class="li"><a class="a" href="<?php echo INCLUDE_PATH; ?>">Home</a> </li>
                     <li class="li"><a class="a" href="<?php echo INCLUDE_PATH; ?>about">Sobre</a> </li>
-                    <li class="li"><a class="a" href="<?php echo INCLUDE_PATH; ?>service">Serviços</a> </li>
-                    <li class="li"><a class="a" href="<?php echo INCLUDE_PATH; ?>contact">Contato</a></li>
+                    <li class="li"><a class="a" href="<?php echo INCLUDE_PATH; ?>skill">Skills</a> </li>
+                    <li class="li"><a class="a" href="<?php echo INCLUDE_PATH; ?>depo">Depoimentos</a> </li>
+                    <li class="li"><a realtime = "contato" class="a" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
                 </ul>                 
             </nav>
         </div>
@@ -73,10 +84,11 @@
    
     <main class="main-container">
        <?php
+       
             if(file_exists('pages/'.$url.'.php')){
                 include('pages/'.$url.'.php');
             }else{
-                if($url !='about' && $url !='service' ){
+                if($url !='about' && $url !='skill' && $url != 'depo'){
                     $pagError = true;
                     include('pages/error404.php');
                 }else{
@@ -86,11 +98,23 @@
             }
        ?>
     </main>
+  
+    <div <?php if($url !='about' && $url !='skill' && $url != 'depo'&& $url != 'home') echo 'class="fixed"'; ?>>
+        <footer class="main-footer ">
+                <div class="main-display">
+                    <p class="main-p">Todos os Direitos reservados</p>
+                    <p class="main-p">&copy;Alencar</p>
+                </div>
+        </footer>
+    </div>
     <script src="https://kit.fontawesome.com/c53d477a6e.js" crossorigin="anonymous"></script>
     <script src="<?php echo INCLUDE_PATH; ?>js/jquery.js"></script>
-   <!-- <script src="<?php echo INCLUDE_PATH; ?>js/constants.js"></script> -->
+
     <script src="<?php echo INCLUDE_PATH; ?>js/menu.js"></script>
     <script src="<?php echo INCLUDE_PATH; ?>js/slide.js"></script>
+
     <script src="<?php echo INCLUDE_PATH; ?>js/scroll.js"></script>
+
+    <script src="<?php echo INCLUDE_PATH; ?>js/skills.js"></script>
 </body>
 </html>
